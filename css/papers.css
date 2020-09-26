@@ -1,0 +1,75 @@
+/********** PAPERS PAGE **********/
+#develop-papers  .scroll-nav { display: none; }
+
+section.papers { background-color: var(--blue-color); }
+
+.papers-content { position: relative; }
+
+.papers-item {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.3rem .5rem .5rem 4.5rem;
+    margin-bottom: -4px;
+    position: relative;
+}
+
+.papers-item .fa-bookmark {
+    color: var(--light-orange-color);
+    font-size: 1.2rem;
+}
+
+.papers-item h3 {
+    display: inline-block;
+    margin: 0 0 .4rem .5rem;
+    color: var(--mid-white-color);
+}
+
+.papers-item p {
+    line-height: 1.5;
+    color: var(--mid-white-color);
+}
+.papers-item p:last-child { margin-bottom: 0; }
+
+.papers-item .number {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+    background: var(--blue-color);
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--white-color);
+    /* border-radius: 50%; */
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    display: grid;
+    place-items: center;
+    color: var(--white-color);
+    font-weight: bold;
+}
+.papers-item:nth-child(even) .number, .papers-item:nth-child(odd) .number {
+    left: 0;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+}
+
+/* Media Queries - Papers */
+@media(max-width: 768px) {
+    .papers-item { width: 80%; }
+}
+
+@media(max-width: 600px) {
+    .papers-item {
+        width: 90%;
+        padding: 1.3rem .5rem .5rem 4.2rem;
+    }
+}
+
+@media(max-width: 370px) {
+    .papers-item {
+        width: 100%;
+        padding: 1.3rem .5rem .5rem 4.05rem;
+    }
+}
+/********** end PAPERS PAGE **********/
